@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sijan Panta</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body">
+            <div class="head"> 
+                <div class="top" >
+                    <p class="name">SIJAN PANTA</p>
+                </div> </div>
+               
+              
+                <div class="cards">
+                    <div class="card-container">
+                        <div class="card-face front-face">
+                            <img src="me.jpg" alt=""/>
+                            <h2>Sijan Panta</h2>
+                            <h3>Learner</h3>
+                        </div>
+                            <div class="card-face back-face">
+                                <div class="container-about">
+                                <h2>About me</h2>
+                                <p>
+                                    You're forcing your child elements to have a specific width, much like @Michael_B mentioned, this essentially creates a static environment where they will remain the set width regardless of the parent.
+
+Essentially at this point, since you know the min-width of your children elements, I would create a media query, at the specific width requirement, which in this case is 100px. Once your screen reaches said size, force your parent to have wrapping items by adding flex-wrap: wrap; to your parent. When you're outside the said width, be sure to set your parent's CSS back to not allow wrapping, flex-wrap: nowrap; . This will allow your child items to wrap, and your parent will create a horizontal to the page.
+                                </p>
+                                <div class="row">
+                                    <a href="" target="_blank"><i class="fb"></i></a>
+                                    <a href="" target="_blank"><i class="insta"></i></a>
+                                    <a href="" target="_blank"><i class="git"></i></a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            <!-- <div class="try" style="display: inline-block;">hello</div> -->
+            <div class="grid-container" >
+                <div class="one" id="container">
+                    
+                        <div class="item">Stage 1</div> 
+                    <div class="info"><p>text</p></div>
+                
+                </div>
+                <div class="two"id=container>
+                   <div class="item"> stage 2</div>
+                    <div class="info"><p>text</p></div>
+                </div>
+                <div class="three" id="container">
+                    <div class="item">stage 3</div> 
+                     <div class="info"><p>text</p></div>
+                </div>
+            </div>
+        </div>
+       
+
+    </body>
+</html>

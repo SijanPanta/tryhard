@@ -1,42 +1,54 @@
 .thumbnail{
-    width: 300px;px;
+    width: 100%;
    
     display:block;
     object-fit: cover;
     object-position:middle ;
-    vertical-align: middle;
+ 
 }
-.titl{
-  width: 250 px;
-  font-weight: bold;
+
+.profile-picture{
+  border-radius: 50px;
+  width: 100%;
 }
-    
 
 .searchbar{
     font-size: 20px;
     margin-right: 12px;
     border:no1pxne;
     transition: box-shadow 0.2s;
-    vertical-align: middle;
+    
     margin-top: 10px;
     display: block;
 }
 
-.tweet{
-    background-color: rgb(83, 142, 219);
-    border-radius: 20px;
-    height: 34px;
-    width: 78px;
-    border: none;
-    color: white;
-    font-weight: bolder;
-    cursor: pointer;
-    font-size: 14;
-    transition: box-shadow 0.4s;
-    vertical-align: middle;
+
+  .channel-picture{
+    
+    
+  
+  }
+  .video-info{
+ 
+  }
+
+  .titl{
+    width: 100%;
+    margin-top: 0px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+
+  .thumbnaill{
+    margin-bottom: 12px;
 
   }
 
-  .tweet:hover{
-    box-shadow:6px 6px 6px rgba(0, 0, 0,0.3);
+  p{
+    font-family: roboto,arial;
+  }
+
+  .video-grids{
+    display: grid;
+    grid-template-columns: 50px 1fr;
   }
